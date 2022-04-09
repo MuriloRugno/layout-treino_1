@@ -6,11 +6,53 @@ body {
 
 .cabecalho {
     display: flex;
-    flex-direction: row;
-    flex-grow: 10;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 60px;
 }
 
 .cabecalho > img {
     display: flex;
     order: 1;
+    margin: 60px 100px 0px 0px;
 }
+
+.textoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.textoContainer > h1 {
+    font-size: 5.5em;
+    font-weight: 100;
+    color: #fff;
+    font-family: 'Audiowide', sans-serif;
+}
+.textoContainer, .textoMenor {
+    font-size: 0.8em;
+}
+
+.textoContainer > h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+.textoContainer > p {
+    font-size: 2em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color: #fff;
+    margin: 0;
+    width: 60%;
+    padding-top: 10px;
+    line-height: 35px;
+}
+
+.formaBranca {
+    
+}
+
