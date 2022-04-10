@@ -27,7 +27,7 @@ body {
 .cabecalho > img {
     display: flex;
     order: 1;
-    margin: 80px 100px 0px 0px;
+    padding: 80px 150px 0px 0px;
     width: 200px;
 }
 
@@ -81,11 +81,28 @@ body {
     z-index: 1;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .listaItens {
     display: flex;
     flex-direction: column;
+    max-width: 393px;
+}
+
+.listaItens > ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.listaItens > ul, li {
+    display: flex;
+    padding: 0;
+    font-size: 1.3em;
+    font-weight: 100;
+    color: #c14164;
+    font-family: 'Raleway', sans-serif;
 }
 
 .servicos > h2 { 
@@ -103,15 +120,79 @@ body {
     color: #c14164;
 }
 
-ul, li {
-    display: flex;
-}
-
 ul > .barra {
-    display: flex;
-    border: solid 3px gray;
+    height: 50px;
+    border: solid 2px gray;
+    margin-right: 20px;
+    border-radius: 18%;
 }
 
 ul > img {
+    width: 55px;
+    padding: 20px 20px 20px 0px;
+}
+
+.card {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 60px 60px 0px;
+    margin-top: -36%;
+    margin-right: 5%;
+    z-index: 1;
+}
+
+.infoPessoa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    height: auto;
+    max-width: 400px;
+    box-shadow: 1px 1px 6px 0px #ff3c3c;
+    border-radius: 60px;
+    background-color: rgba(255, 255, 255, 0.904);
+    padding: 60px 20px;
+}
+
+.infoPessoa > img {
+    clip-path: circle(50% at 50% 50%);
+    width: 73%;
+}
+
+.infoPessoa > h1 {
+    margin: 15px 0px 0px 0px;
+    font-size: 2em;
+    font-weight: 100;
+    color: #c14164;
+    font-family: 'Audiowide', sans-serif;
+}
+
+.infoPessoa > h2 {
+    line-height: 0px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #c14164;
+    font-family: 'Raleway', sans-serif;
+}
+
+.infoPessoa > p {
+    text-align: center;
+    max-width: 216px;
+    font-size: 1em;
+    font-weight: 100;
+    color: #c14164;
+    font-family: 'Raleway', sans-serif;
+}
+
+.emailPessoa > ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.emailPessoa > ul > img {
     width: 40px;
 }
