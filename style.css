@@ -1,5 +1,18 @@
+:root {
+    --tamanhoFont: 1em;
+    --corFont: #fff;
+}
+
+.cabecalho {
+    color: var();
+}
+
+html {
+    margin: 0;
+}
+
 body {
-    margin: 10px;
+    margin: 0;
     padding: 0;
     background-image: linear-gradient(to right, #b6325f, #ff887c);
 }
@@ -14,7 +27,8 @@ body {
 .cabecalho > img {
     display: flex;
     order: 1;
-    margin: 60px 100px 0px 0px;
+    margin: 80px 100px 0px 0px;
+    width: 200px;
 }
 
 .textoContainer {
@@ -53,6 +67,51 @@ body {
 }
 
 .formaBranca {
-    
+    position: absolute;
+    width: 98.9%;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 350px 10px;
+    clip-path: polygon(0 0, 100% 23%, 100% 100%, 0% 100%);
+    z-index: -1;
 }
 
+.servicos {
+    margin: 25px 0px 0px 60px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.listaItens {
+    display: flex;
+    flex-direction: column;
+}
+
+.servicos > h2 { 
+    margin-top: 80px;
+    font-size: 2.5em;
+    font-weight: 100;
+    color: #c14164;
+    font-family: 'Audiowide', sans-serif;
+}
+
+.servicos > ul > li {
+    font-size: 2em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color: #c14164;
+}
+
+ul, li {
+    display: flex;
+}
+
+ul > .barra {
+    display: flex;
+    border: solid 3px gray;
+}
+
+ul > img {
+    width: 40px;
+}
